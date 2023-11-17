@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 class Product {
 private:
     int productId;
@@ -19,6 +20,8 @@ private:
 public:
     // Constructor
     Product(int id, const string& pname, const string& pmanufacturer, double pprice, int pshelfLife, int pquantity, const string& pstorage, int pcaloriesPer100g);
+    ~Product();
+
 
     // Getters
     int getProductId() const;
@@ -39,6 +42,10 @@ public:
     void setQuantity(int pquantity);
     void setStorage(const string& pstorage);
     void setCaloriesPer100g(int pcaloriesPer100g);
+
+
+
+
 };
 
 #endif // PRODUCT_H

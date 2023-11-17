@@ -4,6 +4,11 @@
 Product::Product(int id, const std::string& pname, const std::string& pmanufacturer, double pprice, int pshelfLife, int pquantity, const std::string& pstorage, int pcaloriesPer100g)
     : productId(id), name(pname), manufacturer(pmanufacturer), price(pprice), shelfLife(pshelfLife), quantity(pquantity), storage(pstorage), caloriesPer100g(pcaloriesPer100g) {}
 
+// Destructor implementation
+Product::~Product() {
+
+}
+
 // Getter implementations
 int Product::getProductId() const {
     return productId;
